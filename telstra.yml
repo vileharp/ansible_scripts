@@ -1,0 +1,10 @@
+---
+- name: Cisco IOS
+  hosts: switches
+  connection: local
+  gather_facts: false
+
+  tasks:
+  - name: run show version
+    ios_command:
+      commands: show version
