@@ -1,0 +1,1 @@
+ansible --user root --ask-pass -i ~/myhosts www1 -a "uptime" -c paramiko
