@@ -1,10 +1,15 @@
 ---
 - name: Cisco IOS
-  hosts: switches
+  hosts: 111_L4_switches
   connection: local
   gather_facts: false
 
   tasks:
+
   - name: run show version
     ios_command:
-      commands: show version
+      commands: "show version"
+    register: config
+
+  - name: "Save output to /opt/ansible/backup/"
+    debug: "msg={{config}}"
