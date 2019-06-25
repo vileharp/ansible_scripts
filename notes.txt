@@ -1,1 +1,21 @@
 ansible --user root --ask-pass -i ~/myhosts www1 -a "uptime" -c paramiko
+
+
+
+
+# GIT
+# Start a new feature
+git checkout -b new-feature master
+
+# Edit some files
+git add <file>
+git commit -m "Start a feature"
+# Edit some files
+git add <file>
+git commit -m "Finish a feature"
+
+
+# Merge in the new-feature branch
+git checkout master  #checkout the master which is the receiving branch
+git merge new-feature #merge the new feature to master 
+git branch -d new-feature #detach head
