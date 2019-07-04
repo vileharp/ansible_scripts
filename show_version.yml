@@ -14,5 +14,5 @@
     register: output
 
   - name: show output
-    copy: content="{{ output.stdout[0] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.{{ date }}.txt
+    copy: content="{{ output.stdout[0] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_version.{{ date }}.txt
 

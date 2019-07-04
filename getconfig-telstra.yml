@@ -1,0 +1,3 @@
+---
+- import_playbook: show_run.yml
+- import_playbook: show_version.yml
