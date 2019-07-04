@@ -1,0 +1,8 @@
+[all:vars]
+ansible_user=ravena1
+
+[routers]
+aycvbwtr01c44 ansible_host=10.74.46.45
+
+[switches]
+aycvbwts02c37 ansible_host=10.74.5.234

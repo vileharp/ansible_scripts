@@ -1,0 +1,63 @@
+---
+- name: Cisco IOS
+  hosts: 111_L4_switches
+  connection: network_cli
+  gather_facts: false
+
+  vars:
+    ansible_network_os: ios
+
+  tasks:
+
+
+  - name: ios backup
+    ios_config:
+      backup: yes
+    register: location
+  - shell: cat "{{ location.backup_path }}"
+    register: result
+  - debug:
+      msg: "{{ result.stdout | regex_replace(pattern='Building configuration...', replacement='') }}"
+    register: changed_backup
+  - local_action: copy content={{ changed_backup.msg }} dest={{ location.backup_path }}
+
+
+#########################
+
+---
+- name: Cisco IOS
+  hosts: 111_L4_switches
+  connection: network_cli
+  become_method: enable
+  gather_facts: false
+
+  vars:
+    ansible_network_os: ios
+
+  tasks:
+
+  - name: ios backup
+    ios_config:
+      running_config: yes
+      backup: yes
+
+##################################
+
+---
+- name: Cisco IOS
+  hosts: 111_L4_switches
+  connection: local
+  gather_facts: false
+
+  tasks:
+
+  - name: ios backup
+    ios_config:
+      backup: yes
+      defaults: no
+      backup_options:
+        filename: backup.cfg
+        dir_path: /tmp
+    vars:
+      ansible_command_timeout: 40
+
