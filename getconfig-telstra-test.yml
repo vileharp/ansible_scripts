@@ -1,0 +1,19 @@
+---
+- name: Cisco IOS
+  hosts: 111_sw
+  connection: local
+  vars:
+          date: "{{ lookup('pipe', 'date +%Y.%b.%d.%a.%H%M%S') }}"
+
+  tasks:
+
+  - name: show clock
+    ios_command:
+      commands: 
+        - 'show clock'
+        - 'show snmp location'
+        - 'show inventory'
+    register: output                        
+
+  - name: test
+    copy: content="{{ output.stdout }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_version.{{ date }}.txt

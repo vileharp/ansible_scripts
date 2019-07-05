@@ -1,3 +1,28 @@
 ---
-- import_playbook: show_run.yml
-- import_playbook: show_version.yml
+- name: Cisco IOS
+  hosts: 111_L4_switches
+  connection: local
+  gather_facts: false
+  vars:
+          date: "{{ lookup('pipe', 'date +%Y.%b.%d.%a.%H%M%S') }}"
+
+  tasks:
+
+  - name: show clock
+    ios_command:
+      commands: 
+        - 'show clock'
+        - 'show snmp'
+    register: output1                        
+
+  - name: show snmp location
+    ios_command:                            
+      commands:                             
+        - 'show snmp location'      
+    register: output2                       
+      
+  - name: show output1
+    copy: content="{{ output1.stdout[0] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_version.{{ date }}.txt
+
+  - name: show output2
+    copy: content="{{ output2.stdout[0] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_version.{{ date }}.txt
