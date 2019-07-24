@@ -3,6 +3,7 @@ ansible_user=ravena1
 
 [111_sw]
 aycvmeas80c38 ansible_host=10.74.41.87
+aycvmeas74c38 ansible_host=10.74.41.85
 
 
 [111_routers]

@@ -1,0 +1,20 @@
+name: Network Getting Started First Playbook
+connection: network_cli
+gather_facts: false
+hosts: lab
+tasks:
+
+name: run multiple commands on remote nodes
+ios_command:
+commands:
+
+show run
+show inventory
+show version
+register: output
+name: save output
+blockinfile:
+create: yes
+dest: "/etc/ansible/backup/{{ inventory_hostname }}.txt"
+marker: "#{mark} BLOCK GROUP 1"
+block: |

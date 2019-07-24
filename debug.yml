@@ -1,0 +1,14 @@
+---
+- name: COMMAND MODULE PLAYBOOK
+  hosts: eos
+  connection: network_cli
+
+  tasks:
+   - name: EXECUTE ARISTA EOS COMMAND
+     eos_command:
+       commands: show version
+     register: output
+
+   - name: PRINT OUT THE OUTPUT VARIABLE
+     debug:
+       var: output 

@@ -4,7 +4,7 @@
   connection: local
   gather_facts: false
   vars:
-          date: "{{ lookup('pipe', 'date +%Y.%b.%d.%a.%H%M%S') }}"
+          date: "{{ lookup('pipe', 'date +%Y.%b.%d.%a') }}"
 
   tasks:
 
@@ -19,7 +19,7 @@
   - name: save output     
     blockinfile:
       create: yes
-      dest: "/opt/ansible/backup/{{ inventory_hostname }}.show_run.{{ date }}.txt"
+      dest: "/opt/ansible/backup/telstra_getconfig.{{ date }}.txt"
       marker: "#{mark} BLOCK GROUP 1"
       block: |
         {{ output.stdout[0] }}

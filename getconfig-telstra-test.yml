@@ -2,18 +2,22 @@
 - name: Cisco IOS
   hosts: 111_sw
   connection: local
+  gather_facts: false
   vars:
           date: "{{ lookup('pipe', 'date +%Y.%b.%d.%a.%H%M%S') }}"
 
   tasks:
 
-  - name: show clock
+  - name: show run 
     ios_command:
+      timeout: 60
       commands: 
-        - 'show clock'
-        - 'show snmp location'
-        - 'show inventory'
-    register: output                        
+        - 'show run'
+        - 'show inventory'                               
+    register: output                              
+      
+  - name: Save show run
+    copy: content="{{ output.stdout[0] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_run.{{ date }}.txt
 
-  - name: test
-    copy: content="{{ output.stdout }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_version.{{ date }}.txt
+  - name: Save show inventory
+    copy: content="{{ output.stdout[1] }}" dest=/opt/ansible/backup/{{ inventory_hostname }}.show_inventory.{{ date }}.txt
