@@ -1,0 +1,211 @@
+#Ansible modules
+Ios
+ios_banner Manage multiline banners on Cisco IOS devices
+ios_bgp Configure global BGP protocol settings on Cisco IOS
+ios_command Run commands on remote devices running Cisco IOS
+ios_config Manage Cisco IOS configuration sections
+ios_facts Collect facts from remote devices running Cisco IOS
+ios_interface Manage Interface on Cisco IOS network devices
+ios_l2_interface  Manage Layer-2 interface on Cisco IOS devices
+ios_l3_interface  Manage Layer-3 interfaces on Cisco IOS network devices
+ios_linkagg  Manage link aggregation groups on Cisco IOS network devices
+ios_lldp  Manage LLDP configuration on Cisco IOS network devices
+ios_logging  Manage logging on network devices
+ios_ntp  Manages core NTP configuration
+ios_ping  Tests reachability using ping from Cisco IOS network devices
+ios_static_route  Manage static IP routes on Cisco IOS network devices
+ios_system  Manage the system attributes on Cisco IOS devices
+ios_user  Manage the aggregate of local users on Cisco IOS device
+ios_vlan  Manage VLANs on IOS network devices
+ios_vrf  Manage the collection of VRF definitions on Cisco IOS devices
+
+Iosxr
+iosxr_banner  Manage multiline banners on Cisco IOS XR devices
+iosxr_bgp  Configure global BGP protocol settings on Cisco IOS-XR
+iosxr_command  Run commands on remote devices running Cisco IOS XR
+iosxr_config  Manage Cisco IOS XR configuration sections
+iosxr_facts  Collect facts from remote devices running IOS XR
+iosxr_interface  Manage Interface on Cisco IOS XR network devices
+iosxr_logging  Configuration management of system logging services on network devices
+iosxr_netconf  Configures NetConf sub-system service on Cisco IOS-XR devices
+iosxr_system  Manage the system attributes on Cisco IOS XR devices
+iosxr_user  Manage the aggregate of local users on Cisco IOS XR device
+
+F5
+bigip_apm_policy_fetch  Exports the APM policy or APM access profile from remote nodes
+bigip_apm_policy_import  Manage BIG-IP APM policy or APM access profile imports
+bigip_appsvcs_extension  Manage application service deployments
+bigip_asm_policy  Manage BIG-IP ASM policies (D)
+bigip_asm_policy_fetch  Exports the asm policy from remote nodes
+bigip_asm_policy_import  Manage BIG-IP ASM policy imports
+bigip_asm_policy_manage  Manage BIG-IP ASM policies
+bigip_asm_policy_server_technology  Manages Server Technology on ASM policy
+bigip_asm_policy_signature_set  Manages Signature Sets on ASM policy
+bigip_cli_alias  Manage CLI aliases on a BIG-IP
+bigip_cli_script  Manage CLI scripts on a BIG-IP
+bigip_command  Run TMSH and BASH commands on F5 devices
+bigip_config  Manage BIG-IP configuration sections
+bigip_configsync_action  Perform different actions related to config-sync
+bigip_data_group  Manage data groups on a BIG-IP
+bigip_device_auth  Manage system authentication on a BIG-IP
+bigip_device_auth_ldap  Manage LDAP device authentication settings on BIG-IP
+bigip_device_connectivity  Manages device IP configuration settings for HA on a BIG-IP
+bigip_device_dns  Manage BIG-IP device DNS settings
+bigip_device_facts  Collect facts from F5 BIG-IP devices
+bigip_device_group  Manage device groups on a BIG-IP
+bigip_device_group_member  Manages members in a device group
+bigip_device_ha_group  Manage HA group settings on a BIG-IP system
+bigip_device_httpd  Manage HTTPD related settings on BIG-IP
+bigip_device_license  Manage license installation and activation on BIG-IP devices
+bigip_device_ntp  Manage NTP servers on a BIG-IP
+bigip_device_sshd  Manage the SSHD settings of a BIG-IP
+bigip_device_syslog  Manage system-level syslog settings on BIG-IP
+bigip_device_traffic_group  Manages traffic groups on BIG-IP
+bigip_device_trust  Manage the trust relationships between BIG-IPs
+bigip_dns_cache_resolver  Manage DNS resolver cache configurations on BIG-IP
+bigip_dns_nameserver  Manage LTM DNS nameservers on a BIG-IP
+bigip_dns_resolver  Manage DNS resolvers on a BIG-IP
+bigip_dns_zone  Manage DNS zones on BIG-IP
+bigip_facts  Collect facts from F5 BIG-IP devices (D)
+bigip_file_copy  Manage files in datastores on a BIG-IP
+bigip_firewall_address_list  Manage address lists on BIG-IP AFM
+bigip_firewall_dos_profile  Manage AFM DoS profiles on a BIG-IP
+bigip_firewall_dos_vector  Manage attack vector configuration in an AFM DoS profile
+bigip_firewall_global_rules  Manage AFM global rule settings on BIG-IP
+bigip_firewall_policy  Manage AFM security firewall policies on a BIG-IP
+bigip_firewall_port_list  Manage port lists on BIG-IP AFM
+bigip_firewall_rule  Manage AFM Firewall rules
+bigip_firewall_rule_list  Manage AFM security firewall policies on a BIG-IP
+bigip_gtm_datacenter  Manage Datacenter configuration in BIG-IP
+bigip_gtm_facts  Collect facts from F5 BIG-IP GTM devices (D)
+bigip_gtm_global  Manages global GTM settings
+bigip_gtm_monitor_bigip  Manages F5 BIG-IP GTM BIG-IP monitors
+bigip_gtm_monitor_external  Manages external GTM monitors on a BIG-IP
+bigip_gtm_monitor_firepass  Manages F5 BIG-IP GTM FirePass monitors
+bigip_gtm_monitor_http  Manages F5 BIG-IP GTM http monitors
+bigip_gtm_monitor_https  Manages F5 BIG-IP GTM https monitors
+bigip_gtm_monitor_tcp  Manages F5 BIG-IP GTM tcp monitors
+bigip_gtm_monitor_tcp_half_open  Manages F5 BIG-IP GTM tcp half-open monitors
+bigip_gtm_pool  Manages F5 BIG-IP GTM pools
+bigip_gtm_pool_member  Manage GTM pool member settings
+bigip_gtm_server  Manages F5 BIG-IP GTM servers
+bigip_gtm_topology_record  Manages GTM Topology Records
+bigip_gtm_topology_region  Manages GTM Topology Regions
+bigip_gtm_virtual_server  Manages F5 BIG-IP GTM virtual servers
+bigip_gtm_wide_ip  Manages F5 BIG-IP GTM wide ip
+bigip_hostname  Manage the hostname of a BIG-IP
+bigip_iapp_service  Manages TCL iApp services on a BIG-IP
+bigip_iapp_template  Manages TCL iApp templates on a BIG-IP
+bigip_ike_peer  Manage IPSec IKE Peer configuration on BIG-IP
+bigip_imish_config  Manage BIG-IP advanced routing configuration sections
+bigip_ipsec_policy  Manage IPSec policies on a BIG-IP
+bigip_irule  Manage iRules across different modules on a BIG-IP
+bigip_log_destination  Manages log destinations on a BIG-IP
+bigip_log_publisher  Manages log publishers on a BIG-IP
+bigip_lx_package  Manages Javascript LX packages on a BIG-IP
+bigip_management_route  Manage system management routes on a BIG-IP
+bigip_monitor_dns  Manage DNS monitors on a BIG-IP
+bigip_monitor_external  Manages external LTM monitors on a BIG-IP
+bigip_monitor_gateway_icmp  Manages F5 BIG-IP LTM gateway ICMP monitors
+bigip_monitor_http  Manages F5 BIG-IP LTM http monitors
+bigip_monitor_https  Manages F5 BIG-IP LTM https monitors
+bigip_monitor_ldap  Manages BIG-IP LDAP monitors
+bigip_monitor_snmp_dca  Manages BIG-IP SNMP data collecting agent (DCA) monitors
+bigip_monitor_tcp  Manages F5 BIG-IP LTM tcp monitors
+bigip_monitor_tcp_echo  Manages F5 BIG-IP LTM tcp echo monitors
+bigip_monitor_tcp_half_open  Manages F5 BIG-IP LTM tcp half-open monitors
+bigip_monitor_udp  Manages F5 BIG-IP LTM udp monitors
+bigip_node  Manages F5 BIG-IP LTM nodes
+bigip_partition  Manage BIG-IP partitions
+bigip_password_policy  Manages the authentication password policy on a BIG-IP
+bigip_policy  Manage general policy configuration on a BIG-IP
+bigip_policy_rule  Manage LTM policy rules on a BIG-IP
+bigip_pool  Manages F5 BIG-IP LTM pools
+bigip_pool_member  Manages F5 BIG-IP LTM pool members
+bigip_profile_analytics  Manage HTTP analytics profiles on a BIG-IP
+bigip_profile_client_ssl  Manages client SSL profiles on a BIG-IP
+bigip_profile_dns  Manage DNS profiles on a BIG-IP
+bigip_profile_fastl4  Manages Fast L4 profiles
+bigip_profile_http  Manage HTTP profiles on a BIG-IP
+bigip_profile_http2  Manage HTTP2 profiles on a BIG-IP
+bigip_profile_http_compression  Manage HTTP compression profiles on a BIG-IP
+bigip_profile_oneconnect  Manage OneConnect profiles on a BIG-IP
+bigip_profile_persistence_cookie  Manage cookie persistence profiles on BIG-IP
+bigip_profile_persistence_src_addr  Manage source address persistence profiles
+bigip_profile_server_ssl  Manages server SSL profiles on a BIG-IP
+bigip_profile_tcp  Manage TCP profiles on a BIG-IP
+bigip_profile_udp  Manage UDP profiles on a BIG-IP
+bigip_provision  Manage BIG-IP module provisioning
+bigip_qkview  Manage qkviews on the device
+bigip_remote_role  Manage remote roles on a BIG-IP
+bigip_remote_syslog  Manipulate remote syslog settings on a BIG-IP
+bigip_routedomain  Manage route domains on a BIG-IP
+bigip_selfip  Manage Self-IPs on a BIG-IP system
+bigip_service_policy  Manages service policies on a BIG-IP
+bigip_smtp  Manages SMTP settings on the BIG-IP
+bigip_snat_pool  Manage SNAT pools on a BIG-IP
+bigip_snmp  Manipulate general SNMP settings on a BIG-IP
+bigip_snmp_community  Manages SNMP communities on a BIG-IP
+bigip_snmp_trap  Manipulate SNMP trap information on a BIG-IP
+bigip_software_image  Manage software images on a BIG-IP
+bigip_software_install  Install software images on a BIG-IP
+bigip_software_update  Manage the software update settings of a BIG-IP
+bigip_ssl_certificate  Import/Delete certificates from BIG-IP
+bigip_ssl_key  Import/Delete SSL keys from BIG-IP
+bigip_ssl_ocsp  Manage OCSP configurations on BIG-IP
+bigip_static_route  Manipulate static routes on a BIG-IP
+bigip_sys_daemon_log_tmm  Manage BIG-IP tmm daemon log settings
+bigip_sys_db  Manage BIG-IP system database variables
+bigip_sys_global  Manage BIG-IP global settings
+bigip_timer_policy  Manage timer policies on a BIG-IP
+bigip_traffic_selector  Manage IPSec Traffic Selectors on BIG-IP
+bigip_trunk  Manage trunks on a BIG-IP
+bigip_tunnel  Manage tunnels on a BIG-IP
+bigip_ucs  Manage upload, installation and removal of UCS files
+bigip_ucs_fetch  Fetches a UCS file from remote nodes
+bigip_user  Manage user accounts and user attributes on a BIG-IP
+bigip_vcmp_guest  Manages vCMP guests on a BIG-IP
+bigip_virtual_address  Manage LTM virtual addresses on a BIG-IP
+bigip_virtual_server  Manage LTM virtual servers on a BIG-IP
+bigip_vlan  Manage VLANs on a BIG-IP system
+bigip_wait  Wait for a BIG-IP condition before continuing
+bigiq_application_fasthttp  Manages BIG-IQ FastHTTP applications
+bigiq_application_fastl4_tcp  Manages BIG-IQ FastL4 TCP applications
+bigiq_application_fastl4_udp  Manages BIG-IQ FastL4 UDP applications
+bigiq_application_http  Manages BIG-IQ HTTP applications
+bigiq_application_https_offload  Manages BIG-IQ HTTPS offload applications
+bigiq_application_https_waf  Manages BIG-IQ HTTPS WAF applications
+bigiq_device_discovery  Manage BIG-IP devices through BIG-IQ
+bigiq_device_facts  Collect facts from F5 BIG-IQ devices
+bigiq_regkey_license  Manages licenses in a BIG-IQ registration key pool
+bigiq_regkey_license_assignment  Manage regkey license assignment on BIG-IPs from a BIG-IQ
+bigiq_regkey_pool  Manages registration key pools on BIG-IQ
+bigiq_utility_license  Manage utility licenses on a BIG-IQ
+bigiq_utility_license_assignment  Manage utility license assignment on BIG-IPs from a BIG-IQ
+
+Panos
+panos_admin  Add or modify PAN-OS user accounts password (D)
+panos_admpwd  change admin password of PAN-OS device using SSH with SSH key (D)
+panos_cert_gen_ssh  generates a self-signed certificate using SSH protocol with SSH key (D)
+panos_check  check if PAN-OS device is ready for configuration (D)
+panos_commit  commit firewall’s candidate configuration (D)
+panos_dag  create a dynamic address group (D)
+panos_dag_tags  Create tags for DAG’s on PAN-OS devices (D)
+panos_import import file on PAN-OS devices (D)
+panos_interface  configure data-port network interface for DHCP (D)
+panos_lic  apply authcode to a device/instance (D)
+panos_loadcfg  load configuration on PAN-OS device (D)
+panos_match_rule  Test for match against a security rule on PAN-OS devices or Panorama management console (D)
+panos_mgtconfig  configure management settings of device (D)
+panos_nat_policy  create a policy NAT rule (D)
+panos_nat_rule  create a policy NAT rule (D)
+panos_object create/read/update/delete object in PAN-OS or Panorama (D)
+panos_op  execute arbitrary OP commands on PANW devices (e.g. show interface all) (D)
+panos_pg  create a security profiles group (D)
+panos_query_rules PANOS module that allows search for security rules in PANW NGFW devices (D)
+panos_query_rules PANOS module that allows search for security rules in PANW NGFW devices (D)
+panos_restart  restart a device (D)
+panos_sag  Create a static address group (D)
+panos_security_policy  Create security rule policy on PanOS devices (D)
+panos_security_rule  Create security rule policy on PAN-OS devices or Panorama management console (D)
+panos_set  Execute arbitrary commands on a PAN-OS device using XPath and element (D)
