@@ -2,8 +2,8 @@
 ansible_user=ravena1
 
 [111_sw]
-aycvmeas01c38 ansible_host= 
-aycvmeasb5c38 ansible_host= 
+aycvmeas01c38 ansible_host=10.74.41.65
+aycvmeasb5c38 ansible_host=10.74.41.91 
 aycvmeas74c38 ansible_host=10.74.41.85
 aycvmeas91c38 ansible_host=10.74.41.90
 aycvmeasa2c38 ansible_host=10.74.41.92

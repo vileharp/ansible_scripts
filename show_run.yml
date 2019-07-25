@@ -1,6 +1,6 @@
 ---
 - name: Cisco IOS
-  hosts: 111_L4_switches
+  hosts: all
   connection: local
   gather_facts: false
 
