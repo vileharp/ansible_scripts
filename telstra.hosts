@@ -2,10 +2,29 @@
 ansible_user=ravena1
 
 [111_sw]
-aycvmeas80c38 ansible_host=10.74.41.87
+aycvmeas01c38 ansible_host= 
+aycvmeasb5c38 ansible_host= 
 aycvmeas74c38 ansible_host=10.74.41.85
+aycvmeas91c38 ansible_host=10.74.41.90
+aycvmeasa2c38 ansible_host=10.74.41.92
+aycvmeas80c38 ansible_host=10.74.41.87
+aycvmeas34c38 ansible_host=10.74.41.73
+aycvmeas48c38 ansible_host=10.74.41.88
+aycvmeasa8c38 ansible_host=10.74.41.93
+aycvmeas87c38 ansible_host=10.74.41.89
+aycvmeas08c38 ansible_host=10.74.41.77
+aycvmeas29c38 ansible_host=10.74.41.78
+aycvmeas41c38 ansible_host=10.74.41.79
+aycvmeas15c38 ansible_host=10.74.41.80
+aycvmeas22c38 ansible_host=10.74.41.81
+aycvmeas60c38 ansible_host=10.74.41.82
+aycvmeas67c38 ansible_host=10.74.41.83
+aycvmeas57c38 ansible_host=10.74.41.84
 
 
-[111_routers]
-aysvwesr04c19 ansible_host=10.73.62.109
-aysvwesr03c19 ansible_host=10.73.68.133
+
+
+[111_rt]
+aycvmear01c44 ansible_host=10.74.3.153
+aycvmear02c44 ansible_host=10.74.3.157
+
